@@ -34,6 +34,11 @@ class Kirki_Util {
 	 * @return bool
 	 */
 	public static function is_plugin() {
+		$is_plugin = apply_filters( 'kirki_is_plugin', null);
+		if (is_bool($is_plugin)) {
+			return $is_plugin;
+		}
+
 		$is_plugin = false;
 		if ( ! function_exists( 'get_plugins' ) ) {
 			require_once ABSPATH . 'wp-admin/includes/plugin.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude
