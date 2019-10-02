@@ -1,0 +1,17 @@
+{
+  "name": "itinerisltd/kirki",
+  "description": "The ultimate WordPress Customizer Toolkit",
+  "type": "wordpress-plugin",
+  "license": "proprietary",
+  "require": {
+    "composer/installers": "^1.6"
+  },
+  "extra": {
+    "composify": {
+      "zip": "https://downloads.wordpress.org/plugin/kirki.3.0.40.zip",
+      "file": "kirki.php",
+      "version": "3.0.40",
+      "build-at": "2019-10-02T08:42:01.391Z"
+    }
+  }
+}
